@@ -1,6 +1,6 @@
 ---
 title: Welcome to the Blog!
-date: "2018-07-01"
+date: "2019-02-23"
 featuredImage: './featured.jpg'
 ---
 
