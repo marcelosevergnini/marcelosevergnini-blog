@@ -1,12 +1,13 @@
 import styled from 'styled-components';
 
+// border: 5px solid #c13f3f;  
 const Wrapper = styled.div`
-  border: 5px solid #3598db;
+  border: none;
   border-radius: 50%;
-  height: 150px;
+  height: 250px;
   margin: 0 auto 15px auto;
   overflow: hidden;
-  width: 150px;
+  width: 250px;
 
   img {
     padding: 5px;
