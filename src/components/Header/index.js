@@ -24,6 +24,7 @@ function Header({ config }) {
           <Social
             website={social.website}
             github={social.github}
+            gitlab={social.gitlab}
             twitter={social.twitter}
             linkedin={social.linkedin}
           />

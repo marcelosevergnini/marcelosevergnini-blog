@@ -9,6 +9,7 @@ module.exports = {
   social: {
     website: 'https://marcelo-severgnini-dev.netlify.com/',
     github: 'https://github.com/marcelosevergnini',
+    gitlab: 'https://gitlab.com/marcelo.severgnini',
     twitter: 'https://twitter.com/marcelosevergni',
     linkedin: 'https://www.linkedin.com/in/marcelosevergnini/',
   },
