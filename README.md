@@ -1,10 +1,12 @@
 # DevBlog
 
+### Based on https://ryanfitzgerald.github.io/devblog/
+
 DevBlog is a fully customizable blog template designed for developers (or anyone else) wanting to get into blogging. It comes ready to go and deploy (with ease) or can be edited and extended however you like. The blog is completely statically generated via GatsbyJS, comes with syntax highlighting (via PrismJS) out of the box, and has server-side rendering built-in, among other things.
 
-To view a live demo, [click here](https://ryanfitzgerald.github.io/devblog/).
+To view a live demo, [click here](https://marcelo-severgnini-dev.netlify.com/).
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/RyanFitzgerald/devblog)
+[![Deploy Netlify Status](https://api.netlify.com/api/v1/badges/17a59619-1157-4801-b58b-21aaa1a95933/deploy-status)](https://app.netlify.com/sites/marcelo-severgnini-dev/deploys)
 
 ## Features
 * Fully responsive
@@ -51,17 +53,16 @@ Basic configuration can be done via the ```config.js``` file in the root of the 
 ```javascript
 export default {
   title: 'Dev Blog', // Required
-  author: 'Ryan Fitzgerald', // Required
-  description: 'Full-stack Web Developer',
+  author: 'Marcelo Severgnini', // Required
+  description: 'Full-stack Software Engineer',
   primaryColor: '#3498db', // Required
   showHeaderImage: true,
   showShareButtons: true,
   postsPerPage: 5, // Required
   social: {
-    website: 'https://ryanfitzgerald.ca',
-    github: 'https://github.com/ryanfitzgerald',
-    twitter: 'https://twitter.com/ryanafitzgerald',
-    linkedin: 'https://ca.linkedin.com/in/ryanafitzgerald'
+    website: 'https://marcelo-severgnini-dev.netlify.com/',
+    github: 'https://github.com/marcelosevergnini',
+    linkedin: 'https://www.linkedin.com/in/marcelosevergnini/'
   }
 };
 ```
@@ -136,7 +137,7 @@ Alternatively, if you wish to deploy it to ```https://YOURUSERNAME.github.io``` 
 One of the easiest methods of deploying the blog would be to use [Netlify](https://www.netlify.com/). To deploy to Netlify, simply click the button below and follow the prompts.
 
 <!-- Markdown snippet -->
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/RyanFitzgerald/devblog)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/marcelosevergnini)
 
 ### Other
 
