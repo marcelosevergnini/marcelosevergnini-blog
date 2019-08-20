@@ -16,7 +16,6 @@ before_install:
   - source ./.nvm/nvm.sh
   - nvm install $NODE_VERSION
   - nvm use $NODE_VERSION
-  - rm -rf .cache/ public/ node_modules
   - npm config set python `which python`
   - if [ $TRAVIS_OS_NAME == "linux" ]; then
       export CC="gcc-4.8";
