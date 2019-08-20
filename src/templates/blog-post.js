@@ -5,7 +5,7 @@ import React from 'react';
 
 import userConfig from '../../config';
 
-import Layout from './layout';
+import Template from './layout';
 
 import Article from '../components/Article';
 import ArticleHeader from '../components/ArticleHeader';
@@ -28,7 +28,7 @@ class BlogPostTemplate extends React.Component {
     }
 
     return (
-      <Layout>
+      <Template isPagePost={true}>
         <Container>
           <Helmet
             title={`${post.frontmatter.title} | ${author}`}
@@ -72,7 +72,7 @@ class BlogPostTemplate extends React.Component {
             )}
           </PageNav>
         </Container>
-      </Layout>
+      </Template>
     );
   }
 }

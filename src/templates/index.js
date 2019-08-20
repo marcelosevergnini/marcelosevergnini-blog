@@ -3,7 +3,7 @@ import React from 'react';
 
 import userConfig from '../../config';
 
-import Layout from './layout';
+import Template from './layout';
 
 import Card from '../components/Card';
 import Container from '../components/Container';
@@ -15,7 +15,7 @@ const IndexPage = ({ pageContext }) => {
   const previousUrl = index - 1 === 1 ? '' : (index - 1).toString();
   const nextUrl = (index + 1).toString();
   return (
-    <Layout>
+    <Template isPagePost={false}>
       <Container>
         <Helmet
           title={`${userConfig.title} | ${userConfig.author}`}
@@ -44,7 +44,7 @@ const IndexPage = ({ pageContext }) => {
           previousUrl={previousUrl}
         />
       </Container>
-    </Layout>
+    </Template>
   );
 };
 export default IndexPage;

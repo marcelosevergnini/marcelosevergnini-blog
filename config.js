@@ -1,7 +1,7 @@
 module.exports = {
-  title: 'Art at Code', // Required
+  title: 'Art Code', // Required
   author: 'Marcelo Severgnini', // Required
-  description: 'Full-stack Web Developer',
+  description: 'Art Code',
   primaryColor: '#c13f3f', // Required
   showHeaderImage: true,
   showShareButtons: true,

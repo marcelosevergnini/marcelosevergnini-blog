@@ -35,5 +35,6 @@ addons:
     - gcc-4.8
 # script needed to test, because defaults don't work on osx
 script:
+  - rm -rf .cache/ public/ node_modules
   - npm install
   - npm run lint

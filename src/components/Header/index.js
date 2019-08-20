@@ -9,29 +9,37 @@ import P from './P';
 import Link from './Link';
 import Wrapper from './Wrapper';
 
-function Header({ config }) {
-  const { author, description, social } = config;
+class Header extends React.Component {
 
-  return (
-    <Container>
-      <Wrapper>
-        {userConfig.showHeaderImage && (
-          <HeaderImage/>
-        )}
-        <H1><Link to="/">{author}</Link></H1>
-        <P>{description}</P>
-        {social &&
-          <Social
-            website={social.website}
-            github={social.github}
-            gitlab={social.gitlab}
-            twitter={social.twitter}
-            linkedin={social.linkedin}
-          />
-        }
-      </Wrapper>
-    </Container> 
-  );
+
+    constructor(props) {
+        super(props);
+    }
+
+    render() {
+        const { author, description, social } = userConfig;
+        const {isPagePost} = this.props;
+
+        return (
+            <Container>
+                <Wrapper>
+                    {userConfig.showHeaderImage && !isPagePost && (
+                        <HeaderImage/>
+                    )}
+                    <H1><Link to="/">{author}</Link></H1>
+                    <P>{description}</P>
+                    {social &&
+                    <Social
+                        website={social.website}
+                        github={social.github}
+                        gitlab={social.gitlab}
+                        twitter={social.twitter}
+                        linkedin={social.linkedin}
+                    />
+                    }
+                </Wrapper>
+            </Container>
+        );
+    }
 }
-
 export default Header;
